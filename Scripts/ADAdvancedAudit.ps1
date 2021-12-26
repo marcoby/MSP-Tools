@@ -3,9 +3,9 @@ Import-Module PSWinDocumentation.AD -Force
 Import-Module PSWinReportingV2
 
 $DomainControllers = Get-ADDomainController -Filter * | Select-Object -ExpandProperty Name
-$Date = Get-Date -Format "mmddyyyy"
+#$Date = Get-Date -Format "mmddyyyy"
 $FilePath = "C:\Windows\LTSvc\Reports"
-$Userdomain = $env:USERDOMAIN
+#$Userdomain = $env:USERDOMAIN
 if ($null -eq $DataSetForest) {
     $DataSetForest = Get-WinADForestInformation
 }
@@ -26,7 +26,7 @@ if(!(test-path $FilePath))
 }
 
 
-Dashboard -Name 'AD Audit' -FilePath $FilePath\$USERDOMAIN-ADAdvancedAudit.html -ShowHTML {
+Dashboard -Name 'AD Audit' -FilePath $FilePath\ADAdvancedAudit.html -ShowHTML {
     SectionOption -BorderRadius 0px -RemoveShadow -HeaderBackGroundColor DarkGray
     TabOption -BorderRadius 0px -BackgroundColorActive DarkGray
     TableOption -DataStore JavaScript -ArrayJoin -ArrayJoinString ', '
