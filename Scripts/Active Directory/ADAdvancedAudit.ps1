@@ -163,7 +163,7 @@ Dashboard -Name 'AD Audit' -FilePath $FilePath\ADAdvancedAudit.html -ShowHTML {
                         Table -HideFooter -DataTable $DataSetForest.FoundDomains.$Domain.DomainGroupsPriviliged
                     }
                     Panel {
-                        #Chart -DataTable $DataSetForest.FoundDomains.'ad.evotec.xyz'.DomainGroupsPriviliged -DataNames 'Group Name' -DataCategories $DataSetForest.FoundDomains.'ad.evotec.xyz'.DomainGroupsPriviliged.'Members Count' -DataValues 'Members Count'
+                        Chart -DataTable $DataSetForest.FoundDomains.$Domain.DomainGroupsPriviliged -DataNames 'Group Name' -DataCategories $DataSetForest.FoundDomains.$Domain.DomainGroupsPriviliged.'Members Count' -DataValues 'Members Count'
                     }
                 }
             }

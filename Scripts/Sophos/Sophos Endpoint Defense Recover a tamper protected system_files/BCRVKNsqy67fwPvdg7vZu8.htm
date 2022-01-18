@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="ie7 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 8 ]> <html class="ie8 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie9" lang="en"> <![endif]-->
+<!--[!IE]><!-->
+<html class="" lang="en"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://assets.vidyard.com/" crossorigin="">
+  <link rel="preconnect" href="https://cdn.vidyard.com/" crossorigin="">
+  <script>
+    window.__startTime = new Date().getTime();
+
+    (function checkLegacy() {
+      var loc = window.location;
+      function isIE8orBelow() {
+        return document.documentElement.className.indexOf('lt-ie9') > -1;
+      }
+
+      function isAndroidBefore(version) {
+        var userVersion = navigator.userAgent.toLowerCase().match(/android (\d+(?:\.\d+)+)/);
+        if (userVersion && userVersion.length === 2 && parseFloat(userVersion[1]) < version) {
+          return true;
+        }
+        return false;
+      }
+
+      function isIosBefore(version) {
+        if (/iP(hone|od|ad)/.test(navigator.platform)) {
+          var userVersion = parseInt(navigator.appVersion.match(/OS (\d+)_(\d+)_?(\d+)?/)[1], 10);
+          return userVersion < version;
+        }
+        return false;
+      }
+
+      // Microsoft Office software validates links internally before sending them to the browser.
+      // Since it identifies itself as an older browser, the not supported page redirect triggers which
+      // causes both the player and an error page to open when the link makes it to the browser
+      // To avoid this we skip the error page redirect if we identify the browser as office
+      function isMSOffice() {
+        return /office/.test(navigator.userAgent.toLowerCase());
+      }
+
+      // function isIE10or11() {
+      //   return (
+      //     navigator.userAgent.toLowerCase().indexOf('msie 10') > -1 ||
+      //     !!(navigator.userAgent.match(/Trident/) && !navigator.userAgent.match(/MSIE/))
+      //   );
+      // }
+
+      var notSupported =
+        loc.search.indexOf('vylegacy=1') !== -1 ||
+        isIE8orBelow() ||
+        isAndroidBefore(4.4) ||
+        isIosBefore(7);
+
+      if (notSupported && !isMSOffice()) {
+        window.location = loc.protocol + '//' + loc.hostname + '/error/browser-not-supported';
+      }
+
+      // TODO: Once POMO is running we would need to redirect to OUTPOST so we can serve a supported
+      // else if (isIE10or11()) {
+      //   window.location = `${loc.protocol}//${loc.hostname}/legacy/${loc.pathname.replace(/^\/?/, '')}${
+      //     loc.search
+      //   }`;
+      // }
+    })();
+  </script>
+  <style>
+    body,
+    html {
+      height: 100%;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      font-family: Helvetica, Arial, sans-serif;
+      background-color: transparent;
+      overflow: hidden;
+      /* Hide content until player CSS loads */
+      display: none;
+    }
+    #root {
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+  <script src="BCRVKNsqy67fwPvdg7vZu8_data/runtimemain-dbccc1c0b83f10ac637463df6b2ab0cd.js" crossorigin="anonymous"></script>
+  <script src="BCRVKNsqy67fwPvdg7vZu8_data/main-a6875cc9a4bc0c905ad9e719ee986a48.js" crossorigin="anonymous"></script>
+<script charset="utf-8" src="BCRVKNsqy67fwPvdg7vZu8_data/vendorsplayerplayer-pomounreleased-8cb7ab3fe5273edc6794b7dc0e.js" crossorigin="anonymous"></script><script charset="utf-8" src="BCRVKNsqy67fwPvdg7vZu8_data/vendorsaccess-codeplayer-pomowhitelisted-embed-e43bf5b845c50e.js" crossorigin="anonymous"></script><script charset="utf-8" src="BCRVKNsqy67fwPvdg7vZu8_data/vendorsplayer-pomo-91c8ebef55b4f8ddb2ec0bebc953b6e2.js" crossorigin="anonymous"></script><link rel="stylesheet" type="text/css" href="BCRVKNsqy67fwPvdg7vZu8_data/player-pomo-28d60a971571075912f0f6f09fd9c0a4.css" crossorigin="anonymous"><script charset="utf-8" src="BCRVKNsqy67fwPvdg7vZu8_data/player-pomo-28d60a971571075912f0f6f09fd9c0a4.js" crossorigin="anonymous"></script><style type="text/css">
+    @font-face {
+        font-family: 'RedHatDisplay';
+        src: url('moz-extension://70cca3c2-c56f-400b-ae4c-f2cb9a8e9f29/fonts/RedHatDisplay-Medium.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'RedHatDisplay';
+        src: url('moz-extension://70cca3c2-c56f-400b-ae4c-f2cb9a8e9f29/fonts/RedHatDisplay-Bold.otf') format('opentype');
+        font-weight: bold;
+        font-style: normal;
+    }
+    .myki-preloader-input {
+        transform: translateX(0px) !important;
+    }
+</style><title>Sophos Central: Recovering Tamper Protected Devices</title><script charset="utf-8" src="BCRVKNsqy67fwPvdg7vZu8_data/6-859d2cece83837e6e3fe1470b425a907.js" crossorigin="anonymous"></script><link rel="stylesheet" type="text/css" href="BCRVKNsqy67fwPvdg7vZu8_data/35-74e14040046b57823488f1d3ea5c4a42.css" crossorigin="anonymous"><script charset="utf-8" src="BCRVKNsqy67fwPvdg7vZu8_data/35-74e14040046b57823488f1d3ea5c4a42.js" crossorigin="anonymous"></script></head>
+<body>
+  <main>
+    <div id="root"><style>
+    ._8uAHV,
+    ._1Hk0n:hover,
+    .TRLuW:focus {
+      color: #005bb5 !important;
+    }
+    ._4dphn,
+    ._1osGb:hover,
+    ._3tmT6:focus {
+      background: #005bb5 !important;
+    }
+    ._2sjDQ,
+    .uJ4zT:hover,
+    ._1Xisj:focus {
+      border-color: #005bb5 !important;
+    }
+  </style><div class="_29Gjr"><div class="_1tW_F"><div data-testid="splashScreen" class="_1Kl9L _1v5hd" title="Play Video" aria-label="Play Video" role="button" tabindex="-1" style="background-color: transparent;"><div class="_14ju7 AQAur AnWzR" style="background-image: url(&quot;/BCRVKNsqy67fwPvdg7vZu8.jpg&quot;);"></div><div role="application"><button data-testid="splashPlayButton" class="_1rX1_" tabindex="0" type="button"><div class="_3YJS5" style="background-color: rgb(0, 92, 204);"></div><div class="_3LWEt _1wV0q" style="background-image: url(&quot;/BCRVKNsqy67fwPvdg7vZu8.jpg&quot;); filter: blur(1.2vmin);"></div><svg viewBox="0 0 32 32" class="_1MpKV" aria-label="Play Video" fill="#fff" focusable="false" role="img"><title>Play Video</title><path id="play" data-testid="play" d="M6.484 4.094l20.75 11.225c0.226 0.121 0.41 0.427 0.41 0.683s-0.184 0.563-0.41 0.683l-20.75 11.222c-0.095 0.051-0.26 0.093-0.367 0.093-0.427 0-0.774-0.346-0.774-0.773v-22.451c0-0.428 0.347-0.774 0.774-0.774 0.108 0 0.272 0.042 0.367 0.093z"></path></svg></button></div></div><video aria-label="Sophos Central: Recovering Tamper Protected Devices" preload="metadata" crossorigin="anonymous" class="_1l-KU _3OgU3 _3-9KU" style="background-color: transparent;" playsinline="" data-testid="video" tabindex="0" src="blob:https://play.vidyard.com/5b5f44cd-7870-490a-9d77-92a4ebefc55d"><track id="track-1226235" kind="captions" label="English" srclang="en" src="blob:https://play.vidyard.com/938b0603-9012-457c-8823-412ff7651196"></video></div></div><svg width="0" height="0" focusable="false"><defs><linearGradient id="side-shadow" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color: rgb(0, 0, 0); stop-opacity: 0.95;"></stop><stop offset="22.5%" style="stop-color: rgb(0, 0, 0); stop-opacity: 0.75;"></stop><stop offset="32.5%" style="stop-color: rgb(0, 0, 0); stop-opacity: 0.55;"></stop><stop offset="50%" style="stop-color: rgb(0, 0, 0); stop-opacity: 0;"></stop></linearGradient><linearGradient id="top-shadow" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color: rgb(0, 0, 0); stop-opacity: 0.77;"></stop><stop offset="30%" style="stop-color: rgb(0, 0, 0); stop-opacity: 0.655;"></stop><stop offset="42%" style="stop-color: rgb(0, 0, 0); stop-opacity: 0.56;"></stop><stop offset="80%" style="stop-color: rgb(0, 0, 0); stop-opacity: 0.1;"></stop><stop offset="90%" style="stop-color: rgb(0, 0, 0); stop-opacity: 0.027;"></stop><stop offset="100%" style="stop-color: rgb(0, 0, 0); stop-opacity: 0;"></stop></linearGradient><linearGradient id="bottom-shadow" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color: rgb(0, 0, 0); stop-opacity: 0;"></stop><stop offset="12%" style="stop-color: rgb(0, 0, 0); stop-opacity: 0.04;"></stop><stop offset="27%" style="stop-color: rgb(0, 0, 0); stop-opacity: 0.15;"></stop><stop offset="57%" style="stop-color: rgb(0, 0, 0); stop-opacity: 0.56;"></stop><stop offset="66%" style="stop-color: rgb(0, 0, 0); stop-opacity: 0.655;"></stop><stop offset="100%" style="stop-color: rgb(0, 0, 0); stop-opacity: 0.8;"></stop></linearGradient></defs></svg></div>
+  </main>
+
+
+</body></html>
