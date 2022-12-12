@@ -1,0 +1,3 @@
+Download a DMG file that is suitable for installation with management tools. It does not require access to the appliance at run time, but it must connect before the installer expires as configured in the Jump Client Mass Deployment Wizard.
+
+https://kinnate.beyondtrustcloud.com/download_client_connector?fn=null&jc=91a96c9cc142dc81c5a609dc9376c84e&p=mac-osx-x86-dmg&ss=99ffed4e55dddc04a842b9824b12a51eb8da30f4
